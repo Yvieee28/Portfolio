@@ -17,7 +17,6 @@
   <div class="bg-blur bg1"></div>
   <div class="bg-blur bg2"></div>
 
-
   <header class="site-header" id="top">
     <nav class="nav">
       <a class="brand" href="#top">
@@ -25,7 +24,7 @@
         <span>Yvie</span>
       </a>
 
-      <button class="menuBtn" id="menuBtn">☰</button>
+      <button class="menuBtn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
       <div class="navLinks" id="navLinks">
         <a href="#about">À propos</a>
@@ -36,7 +35,7 @@
       </div>
     </nav>
 
-    <section class="hero container">
+    <section class="hero container reveal">
       <div class="heroLeft">
         <div class="pillRow">
           <span class="pill">Business Intelligence</span>
@@ -44,7 +43,7 @@
           <span class="pill">IA</span>
         </div>
 
-        <h1>
+        <h1 class="headline">
           Yvette Fabiola <span class="grad">Bayi Essoka</span>
         </h1>
 
@@ -60,11 +59,11 @@
         </div>
 
         <div class="linksRow">
-          <a class="link" href="https://github.com/Yvieee28" target="_blank">GitHub</a>
+          <a class="link" href="https://github.com/Yvieee28" target="_blank" rel="noreferrer">GitHub</a>
           <span class="sep">•</span>
-          <a class="link" href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b" target="_blank">LinkedIn</a>
+          <a class="link" href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b" target="_blank" rel="noreferrer">LinkedIn</a>
           <span class="sep">•</span>
-          <a class="link" href="mailto:yvetteessoka@gmail.com">Email</a>
+          <a class="link" href="mailto:yvetteessoka@gmail.com">yvetteessoka@gmail.com</a>
         </div>
 
         <div class="miniBio">
@@ -78,18 +77,37 @@
           </div>
           <div class="miniCard">
             <div class="miniTitle">Passions</div>
-            <div class="miniValue">Rap • Hip-hop • Michael Jackson</div>
+            <div class="miniValue">Rap/Hip-hop • Michael Jackson • Pilates</div>
           </div>
         </div>
       </div>
 
       <div class="heroRight">
-        <div class="profileCard">
-          <img src="assets/profile.jpg" class="avatar" alt="Photo Yvie" />
+        <div class="profileCard lift">
+          <img src="assets/profile.jpg" class="avatar" alt="Photo de profil de Yvie" />
           <div class="profileInfo">
             <div class="profileName">Yvie</div>
-            <div class="profileRole">Data • BI • Machine Learning</div>
-            <div class="profileNote">Disponible stage / alternance</div>
+            <div class="profileRole">BI • Data • Machine Learning</div>
+            <div class="profileNote">Disponible : stage / alternance</div>
+          </div>
+        </div>
+
+        <div class="statGrid">
+          <div class="stat">
+            <div class="statNum">Python</div>
+            <div class="statLbl">Analyse • ML • automation</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">SQL</div>
+            <div class="statLbl">Extraction • reporting</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">BI</div>
+            <div class="statLbl">Power BI • Tableau</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">EDA</div>
+            <div class="statLbl">Insights métier</div>
           </div>
         </div>
       </div>
@@ -97,57 +115,56 @@
   </header>
 
   <main class="container main">
-
-
-    <section class="section" id="about">
+    <section class="section reveal" id="about">
       <div class="sectionHead">
         <h2>À propos</h2>
-        <p class="sectionHint">Profil orienté data & analyse</p>
+        <p class="sectionHint">Profil BI orienté impact</p>
       </div>
 
       <div class="grid2">
         <div class="card">
           <p class="text">
-            Étudiante en Business Intelligence, je travaille sur la collecte,
-            l’analyse et la visualisation de données pour aider à la prise de décision.
-            J’aime concevoir des projets concrets orientés performance.
+            Je travaille sur la chaîne complète : préparation des données, analyse exploratoire,
+            visualisation et modèles prédictifs. J’aime les projets concrets (support client, e-commerce,
+            santé) avec une approche orientée décision.
           </p>
         </div>
 
         <div class="card">
           <p class="text">
-            Curieuse et rigoureuse, je m’intéresse à la data science,
-            au machine learning et aux outils décisionnels modernes.
+            Côté perso, j’écoute beaucoup de <strong>rap & hip-hop</strong> et je suis une grande fan de
+            <strong>Michael Jackson</strong>. Je pratique aussi des <strong>exercices de Pilates</strong>,
+            qui m’aident à garder discipline, régularité et concentration.
           </p>
         </div>
       </div>
     </section>
 
-  
-    <section class="section" id="skills">
+    <section class="section reveal" id="skills">
       <div class="sectionHead">
-        <h2>Compétences Data</h2>
-        <p class="sectionHint">Analyse & traitement</p>
+        <h2>Compétences</h2>
+        <p class="sectionHint">Stack & outils</p>
       </div>
 
       <div class="chipWrap">
         <span class="chip">Python</span>
         <span class="chip">Pandas</span>
         <span class="chip">NumPy</span>
-        <span class="chip">Scikit-learn</span>
+        <span class="chip">scikit-learn</span>
         <span class="chip">SQL</span>
         <span class="chip">Power BI</span>
         <span class="chip">Tableau</span>
-        <span class="chip">Data Analysis</span>
-        <span class="chip">Machine Learning</span>
+        <span class="chip">Data Cleaning</span>
+        <span class="chip">EDA</span>
+        <span class="chip">Classification</span>
+        <span class="chip">Git / GitHub</span>
       </div>
     </section>
 
-  
-    <section class="section" id="dev">
+    <section class="section reveal" id="dev">
       <div class="sectionHead">
         <h2>Développement Web</h2>
-        <p class="sectionHint">Notions & pratique</p>
+        <p class="sectionHint">Notions & pratiques</p>
       </div>
 
       <div class="chipWrap">
@@ -158,80 +175,113 @@
         <span class="chip">Responsive Design</span>
         <span class="chip">Intégration UI</span>
         <span class="chip">Notions React</span>
-        <span class="chip">API / Front</span>
+        <span class="chip">Consommation d’API</span>
+        <span class="chip">Déploiement GitHub Pages</span>
       </div>
     </section>
 
-  
-    <section class="section" id="projects">
+    <section class="section reveal" id="projects">
       <div class="sectionHead">
         <h2>Projets</h2>
-        <p class="sectionHint">Sélection</p>
+        <p class="sectionHint">Sélection portfolio</p>
       </div>
 
       <div class="projects">
-        <article class="project">
-          <h3>Customer Satisfaction Prediction</h3>
+        <article class="project lift">
+          <div class="projectTop">
+            <h3>Customer Support Satisfaction Prediction</h3>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">scikit-learn</span>
+              <span class="badge">Kaggle</span>
+            </div>
+          </div>
           <p class="text">
-            Modèle de classification pour prédire la satisfaction client à partir
-            de tickets support (prétraitement, ML, évaluation).
+            Prédiction de la satisfaction client à partir de tickets support.
+            Pipeline complet : nettoyage, encodage, modèle de classification, évaluation.
           </p>
+          <div class="projectActions">
+            <a class="btn small" href="https://github.com/Yvieee28" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn small ghost" href="#contact">Me contacter</a>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Dashboard KPI</h3>
+        <article class="project lift">
+          <div class="projectTop">
+            <h3>Dashboard KPI</h3>
+            <div class="badges">
+              <span class="badge">Power BI</span>
+              <span class="badge">KPI</span>
+              <span class="badge">DataViz</span>
+            </div>
+          </div>
           <p class="text">
-            Tableau de bord décisionnel pour le suivi de performance et d’indicateurs clés.
+            Tableau de bord décisionnel pour le suivi d’indicateurs clés (avancement, qualité/adoption,
+            performance business).
           </p>
+          <div class="projectActions">
+            <a class="btn small ghost" href="#contact">Demander un aperçu</a>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Titanic Survival Prediction</h3>
+        <article class="project lift">
+          <div class="projectTop">
+            <h3>Titanic Survival Prediction</h3>
+            <div class="badges">
+              <span class="badge">ML</span>
+              <span class="badge">Classification</span>
+              <span class="badge">Python</span>
+            </div>
+          </div>
           <p class="text">
-            Projet de classification binaire avec analyse des performances et interprétation.
+            Projet de classification binaire : préparation des features, entraînement, métriques et
+            interprétation des erreurs.
           </p>
+          <div class="projectActions">
+            <a class="btn small ghost" href="#contact">Lien sur demande</a>
+          </div>
         </article>
       </div>
     </section>
 
-    
-    <section class="section" id="contact">
+    <section class="section reveal" id="contact">
       <div class="sectionHead">
         <h2>Contact</h2>
-        <p class="sectionHint">Disponible rapidement</p>
+        <p class="sectionHint">Réponse rapide</p>
       </div>
 
-      <div class="contactCard">
+      <div class="contactCard lift">
         <div class="contactItem">
           <div class="contactLabel">Email</div>
           <a class="contactValue" href="mailto:yvetteessoka@gmail.com">yvetteessoka@gmail.com</a>
         </div>
         <div class="contactItem">
           <div class="contactLabel">LinkedIn</div>
-          <a class="contactValue" target="_blank"
+          <a class="contactValue" target="_blank" rel="noreferrer"
              href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b">
-            Voir le profil
+             linkedin.com/in/yvette-fabiola-bayi-essoka
           </a>
         </div>
         <div class="contactItem">
           <div class="contactLabel">GitHub</div>
-          <a class="contactValue" target="_blank"
-             href="https://github.com/Yvieee28">
+          <a class="contactValue" target="_blank" rel="noreferrer" href="https://github.com/Yvieee28">
             github.com/Yvieee28
           </a>
         </div>
       </div>
-    </section>
 
+      <a class="backTop" href="#top">Retour en haut ↑</a>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footerInner">
-      <div>© 2026 — Yvie • Data & BI</div>
-      <div class="footerSmall">NEXA Digital School</div>
+      <div>© <span id="year"></span> Yvie • BI / Data</div>
+      <div class="footerSmall">NEXA Digital School • Île-de-France</div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
