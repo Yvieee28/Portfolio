@@ -3,145 +3,263 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yvie | Portfolio Data & IA</title>
-  <meta name="description" content="Portfolio de Yvette Fabiola Essoka – Data, Business Intelligence, IA" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Yvie | Portfolio Data & BI</title>
+  <meta name="description" content="Portfolio de Yvette Fabiola Bayi Essoka — Business Intelligence, Data, IA." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="bg-blur bg1"></div>
+  <div class="bg-blur bg2"></div>
 
-<header class="header" id="top">
-  <nav class="nav">
-    <a class="logo" href="#top">Yvie</a>
-    <button class="menuBtn" id="menuBtn">☰</button>
-    <div class="navLinks" id="navLinks">
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <span class="brandDot"></span>
+        <span>Yvie</span>
+      </a>
 
-  <section class="hero">
-    <div class="heroText">
-      <p class="badge">Data • Business Intelligence • IA</p>
+      <button class="menuBtn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
-      <h1>Salut, moi c’est <span class="accent">Yvie</span></h1>
-
-      <p class="subtitle">
-        Étudiante à <strong>NEXA Digital School</strong> en <strong>Business Intelligence</strong>.  
-        Passionnée par la data, j’aspire à devenir <strong>Data Scientist</strong> et à concevoir
-        des solutions intelligentes à partir des données.
-      </p>
-
-      <div class="ctaRow">
-        <a class="btn primary" href="#projects">Voir mes projets</a>
-        <a class="btn" href="#contact">Me contacter</a>
+      <div class="navLinks" id="navLinks">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
       </div>
+    </nav>
 
-      <div class="socialRow">
-        <a href="https://github.com/Yvieee28" target="_blank">GitHub</a>
-        <span>•</span>
-        <a href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b" target="_blank">LinkedIn</a>
-        <span>•</span>
-        <a href="mailto:yvetteessoka@gmail.com">Email</a>
-      </div>
-    </div>
+    <section class="hero container">
+      <div class="heroLeft">
+        <div class="pillRow">
+          <span class="pill">Business Intelligence</span>
+          <span class="pill">Data</span>
+          <span class="pill">IA</span>
+        </div>
 
-    <div class="heroCard">
-      <img src="assets/profile.jpg" class="avatar" alt="Photo Yvie">
-      <div class="heroCardInfo">
-        <p class="name">Yvette Fabiola Essoka</p>
-        <p class="role">Business Intelligence • Data • IA</p>
-        <p class="small">
-          📍 Île-de-France <br>
-          🎓 NEXA Digital School <br>
-          🎯 Objectif : Data Scientist
+        <h1>
+          Yvette Fabiola <span class="grad">Bayi Essoka</span>
+        </h1>
+
+        <p class="lead">
+          Étudiante à <strong>NEXA Digital School</strong> en <strong>Business Intelligence</strong>.
+          Basée en <strong>Île-de-France</strong> et motivée par un objectif clair :
+          devenir <strong>Data Scientist</strong> et créer de la valeur à partir des données.
         </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn ghost" href="#contact">Me contacter</a>
+        </div>
+
+        <div class="linksRow">
+          <a class="link" href="https://github.com/Yvieee28" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="sep">•</span>
+          <a class="link" href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span class="sep">•</span>
+          <a class="link" href="mailto:yvetteessoka@gmail.com">yvetteessoka@gmail.com</a>
+        </div>
+
+        <div class="miniBio">
+          <div class="miniCard">
+            <div class="miniTitle">Localisation</div>
+            <div class="miniValue">Île-de-France</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniTitle">École</div>
+            <div class="miniValue">NEXA Digital School</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniTitle">Fun fact</div>
+            <div class="miniValue">Rap/Hip-hop • Michael Jackson</div>
+          </div>
+        </div>
       </div>
+
+      <div class="heroRight">
+        <div class="profileCard">
+          <img src="assets/profile.jpg" class="avatar" alt="Photo de profil de Yvie" />
+          <div class="profileInfo">
+            <div class="profileName">Yvie</div>
+            <div class="profileRole">BI • Data • Machine Learning</div>
+            <div class="profileNote">Disponible : stage / alternance</div>
+          </div>
+        </div>
+
+        <div class="statGrid">
+          <div class="stat">
+            <div class="statNum">Python</div>
+            <div class="statLbl">Analyse • ML • automation</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">SQL</div>
+            <div class="statLbl">Extraction • reporting</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">BI</div>
+            <div class="statLbl">Power BI • Tableau</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">EDA</div>
+            <div class="statLbl">Insights métier</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container main">
+    <section class="section" id="about">
+      <div class="sectionHead">
+        <h2>À propos</h2>
+        <p class="sectionHint">Profil BI orienté impact</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <p class="text">
+            Je travaille sur la chaîne complète : préparation des données, analyse exploratoire,
+            visualisation et modèles prédictifs. J’aime les projets concrets (support client, e-commerce,
+            santé) avec une approche orientée décision.
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="text">
+            En dehors de la tech, j’écoute beaucoup de <strong>rap & hip-hop</strong> et mon artiste préféré
+            est <strong>Michael Jackson</strong> pour sa créativité et sa discipline.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="sectionHead">
+        <h2>Compétences</h2>
+        <p class="sectionHint">Stack & outils</p>
+      </div>
+
+      <div class="chipWrap">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">scikit-learn</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Tableau</span>
+        <span class="chip">Data Cleaning</span>
+        <span class="chip">EDA</span>
+        <span class="chip">Classification</span>
+        <span class="chip">Git / GitHub</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="sectionHead">
+        <h2>Projets</h2>
+        <p class="sectionHint">Sélection portfolio</p>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="projectTop">
+            <h3>Customer Support Satisfaction Prediction</h3>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">scikit-learn</span>
+              <span class="badge">Kaggle</span>
+            </div>
+          </div>
+          <p class="text">
+            Prédiction de la satisfaction client à partir de tickets support.
+            Pipeline complet : nettoyage, encodage, modèle de classification, évaluation.
+          </p>
+          <div class="projectActions">
+            <a class="btn small" href="https://github.com/Yvieee28" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn small ghost" href="#contact">Me contacter</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="projectTop">
+            <h3>Dashboard KPI</h3>
+            <div class="badges">
+              <span class="badge">Power BI</span>
+              <span class="badge">KPI</span>
+              <span class="badge">DataViz</span>
+            </div>
+          </div>
+          <p class="text">
+            Tableau de bord décisionnel pour le suivi d’indicateurs clés (avancement, qualité/adoption,
+            performance business).
+          </p>
+          <div class="projectActions">
+            <a class="btn small ghost" href="#contact">Demander un aperçu</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="projectTop">
+            <h3>Titanic Survival Prediction</h3>
+            <div class="badges">
+              <span class="badge">ML</span>
+              <span class="badge">Classification</span>
+              <span class="badge">Python</span>
+            </div>
+          </div>
+          <p class="text">
+            Projet de classification binaire : préparation des features, entraînement, métriques et
+            interprétation des erreurs.
+          </p>
+          <div class="projectActions">
+            <a class="btn small ghost" href="#contact">Lien sur demande</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p class="sectionHint">Réponse rapide</p>
+      </div>
+
+      <div class="contactCard">
+        <div class="contactItem">
+          <div class="contactLabel">Email</div>
+          <a class="contactValue" href="mailto:yvetteessoka@gmail.com">yvetteessoka@gmail.com</a>
+        </div>
+        <div class="contactItem">
+          <div class="contactLabel">LinkedIn</div>
+          <a class="contactValue" target="_blank" rel="noreferrer"
+             href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b">
+             linkedin.com/in/yvette-fabiola-bayi-essoka
+          </a>
+        </div>
+        <div class="contactItem">
+          <div class="contactLabel">GitHub</div>
+          <a class="contactValue" target="_blank" rel="noreferrer" href="https://github.com/Yvieee28">
+            github.com/Yvieee28
+          </a>
+        </div>
+      </div>
+
+      <a class="backTop" href="#top">Retour en haut ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerInner">
+      <div>© <span id="year"></span> Yvie • BI / Data</div>
+      <div class="footerSmall">NEXA Digital School • Île-de-France</div>
     </div>
-  </section>
-</header>
+  </footer>
 
-<main class="main">
-
-<section class="section" id="about">
-  <h2>À propos</h2>
-  <p>
-    Étudiante en <strong>Business Intelligence à NEXA</strong>, je développe des projets orientés
-    analyse de données, machine learning et visualisation.
-    J’aime comprendre les données, les structurer et en tirer de la valeur décisionnelle.
-  </p>
-  <p>
-    En dehors de la tech, je suis passionnée de <strong>rap & hip-hop</strong>,
-    et mon artiste préféré reste <strong>Michael Jackson</strong>, pour sa créativité et sa discipline artistique.
-  </p>
-</section>
-
-<section class="section" id="skills">
-  <h2>Compétences</h2>
-  <div class="chips">
-    <span>Python</span>
-    <span>Pandas</span>
-    <span>NumPy</span>
-    <span>Scikit-learn</span>
-    <span>SQL</span>
-    <span>Power BI</span>
-    <span>Tableau</span>
-    <span>Machine Learning</span>
-    <span>Data Analysis</span>
-    <span>Git / GitHub</span>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <h2>Projets</h2>
-
-  <div class="projectsGrid">
-
-    <div class="projectCard">
-      <h3>Customer Satisfaction Prediction</h3>
-      <p>
-        Analyse et prédiction de la satisfaction client à partir de tickets support.
-        Pipeline complet : nettoyage, encodage, modèle de classification.
-      </p>
-      <p class="tech">Python • Scikit-learn • Kaggle</p>
-      <a class="btn small" href="https://github.com/Yvieee28" target="_blank">Voir le projet</a>
-    </div>
-
-    <div class="projectCard">
-      <h3>Dashboard KPI</h3>
-      <p>
-        Tableau de bord décisionnel pour le suivi de performance et d’indicateurs clés.
-      </p>
-      <p class="tech">Power BI • KPI • DataViz</p>
-    </div>
-
-    <div class="projectCard">
-      <h3>Titanic Survival Prediction</h3>
-      <p>
-        Modèle de classification pour prédire la survie des passagers.
-      </p>
-      <p class="tech">Machine Learning • Python</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <h2>Contact</h2>
-  <p>Email : <a href="mailto:yvetteessoka@gmail.com">yvetteessoka@gmail.com</a></p>
-  <p>LinkedIn : <a href="https://www.linkedin.com/in/yvette-fabiola-bayi-essoka-936a7035b" target="_blank">Voir mon profil</a></p>
-  <p>GitHub : <a href="https://github.com/Yvieee28" target="_blank">github.com/Yvieee28</a></p>
-</section>
-
-</main>
-
-<footer class="footer">
-  <p>© 2026 — Yvette Fabiola Essoka | Data & Business Intelligence</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
